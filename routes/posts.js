@@ -12,7 +12,6 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-	console.log('post', req.body.title, req.body.desc);
 	const post = new Post({
 		title: req.body.title,
 		desc: req.body.desc

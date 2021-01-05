@@ -17,6 +17,7 @@ mongoose
 	.connect(process.env.DATABASECONNECTION, { useNewUrlParser: true, useUnifiedTopology: true })
 	.then((res) => console.log('connected to DB!'))
 	.catch((err) => console.log(err));
+
 app.listen(port, () => {
 	console.log(`listening at http://localhost${port}`);
 });
